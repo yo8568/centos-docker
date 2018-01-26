@@ -21,6 +21,4 @@
 
 ### installation
 
-    ```
     docker-compose up -d
-    ```
