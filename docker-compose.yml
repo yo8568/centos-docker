@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-  kenny-mongo:
+  simple-mongo:
     image: mongo
-    container_name: kenny-mongo
+    container_name: simple-mongo
     volumes:
       - ./mongo/data/db:/data/db
     ports:
