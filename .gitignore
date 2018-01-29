@@ -1,1 +1,2 @@
-mongo/
+mongo/*
+!mongo/data/db/.gitkeep
