@@ -9,3 +9,12 @@ services:
     ports:
       - "27017:27017"
     restart: always
+
+  redis:
+    restart: always
+    container_name: redis
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    volumes:
+      - ./mongo/data/redis-data:/data
