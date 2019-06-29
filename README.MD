@@ -22,3 +22,8 @@
 ```bash
   $ docker-compose up -d
 ```
+
+### Enter Container
+```bash
+  $ docker exec -ti linux-centos bash
+```
