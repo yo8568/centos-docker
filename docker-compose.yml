@@ -1,20 +1,7 @@
-version: '2'
+version: '3.7'
 
 services:
-  simple-mongo:
-    image: mongo
-    container_name: simple-mongo
-    volumes:
-      - ./mongo/data/db:/data/db
-    ports:
-      - "27017:27017"
+  linux-centos:
+    image: local/c7-systemd
+    container_name: linux-centos
     restart: always
-
-  redis:
-    restart: always
-    container_name: redis
-    image: redis:alpine
-    ports:
-      - 6379:6379
-    volumes:
-      - ./mongo/data/redis-data:/data
